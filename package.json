@@ -1,0 +1,13 @@
+{
+  "name": "workast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "rmayer <cassettes90@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
