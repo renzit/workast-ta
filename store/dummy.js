@@ -1,8 +1,11 @@
 const { userMocks } = require('../utils/mocks/userMock');
+const { articleMocks }= require('../utils/mocks/articleMocks');
 
 
 const db = {
-    'user': userMocks
+    'user': userMocks,
+    'article': articleMocks
+
 };
 
 async function list(table) {

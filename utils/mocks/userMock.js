@@ -38,7 +38,7 @@ const userMocks = [{
     "id": 10,
     "name": "ttennock9",
     "avatar": "http://dummyimage.com/246x148.jpg/5fa2dd/ffffff"
-  }]
+  }];
 
   module.exports = {
     userMocks,
