@@ -14,15 +14,18 @@ async function list(table) {
 
 async function get(table, id) {
     let col = list(table);
+    console.log(db);
     return col.filter(item => item.id === id)[0] || null;
 }
 
 async function insert(table, data) {
     db[table].push(data);
+    console.log(db);
 }
 
 async function update(table, data) {
     db[table].push(data);
+    console.log(db);
 }
 
 async function remove(table, id) {

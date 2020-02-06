@@ -10,13 +10,8 @@ module.exports = function (injectedStore) {
         return store.insert(TABLE, body);
     }
 
-    function update(body) {
-        return store.update(TABLE, body);
-    }
-
 
     return {
         insert,
-        update,
     };
 } 

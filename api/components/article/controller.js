@@ -10,8 +10,22 @@ module.exports = function (injectedStore) {
         return store.list(TABLE);
     }
 
+    function insert(body) {
+        return store.insert(TABLE, body);
+    }
+
+    function update(body) {
+        return store.update(TABLE, body);
+    }
+
+    function remove(body) {
+        return store.remove(TABLE, body);
+    }
+
 
     return {
         list,
+        insert,
+        update,
     };
 } 
