@@ -29,6 +29,12 @@ async function update(table, data) {
 }
 
 async function remove(table, id) {
+    let list = db[table];
+    let index = list.findIndex(elem => elem.id == id.id);
+    if (index !== -1){
+        list.splice(index, 1);
+    }
+
     return true;
 }
 

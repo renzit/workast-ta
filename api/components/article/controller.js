@@ -27,5 +27,6 @@ module.exports = function (injectedStore) {
         list,
         insert,
         update,
+        remove
     };
 } 
