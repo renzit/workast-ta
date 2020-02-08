@@ -1,4 +1,5 @@
-const TABLE = 'article';
+
+const COLLECTION = 'article';
 
 module.exports = function (injectedStore) {
     let store = injectedStore;
@@ -7,19 +8,19 @@ module.exports = function (injectedStore) {
     }
 
     function list() {
-        return store.list(TABLE);
+        return store.list(COLLECTION);
     }
 
-    function insert(body) {
-        return store.insert(TABLE, body);
+    async function insert(body) {
+        return store.insert(COLLECTION, body);
     }
 
     function update(body) {
-        return store.update(TABLE, body);
+        return store.update(COLLECTION, body);
     }
 
     function remove(body) {
-        return store.remove(TABLE, body);
+        return store.remove(COLLECTION, body);
     }
 
 

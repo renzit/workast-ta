@@ -1,4 +1,4 @@
-const TABLE = 'user';
+const COLLECTION = 'user';
 
 module.exports = function (injectedStore) {
     let store = injectedStore;
@@ -7,7 +7,12 @@ module.exports = function (injectedStore) {
     }
 
     function insert(body) {
-        return store.insert(TABLE, body);
+        const user = {
+            name: body.name,
+            avatar: body.avatar
+        }
+        console.log(user);
+        return store.insert(COLLECTION, body);
     }
 
 
